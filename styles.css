@@ -2,6 +2,10 @@ h1 {
     color: red;
 }
 
+section {
+    padding-bottom: 3rem;
+}
+
 /* nav bar */
 .navbar-light .navbar-nav .nav-link {
     color: #000;
@@ -19,6 +23,7 @@ h1 {
     justify-content: center;
     align-items: center;
     padding-top: 7rem;
+    position: relative;
 
 }
 
@@ -27,4 +32,54 @@ h1 {
     object-fit: cover;
     display: flex;
     border-radius: 30px;
+    position: relative;
+}
+
+.hero-txt {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: left;
+    z-index: 3;
+
+}
+
+.hero-txt h1 {
+    font-size: 5rem;
+    font-family: "Urbanist", sans-serif;
+    letter-spacing: 3px;
+}
+
+.hero-txt h2 {
+    font-size: 2rem;
+    font-family: "Urbanist", sans-serif;
+}
+
+/* mission section */
+.mission-sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Urbanist", sans-serif;
+}
+
+.mission-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.mission-sub {
+    font-size: 1.7rem;
+    padding-bottom: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.mission-txt {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
