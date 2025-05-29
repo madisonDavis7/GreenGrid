@@ -144,3 +144,28 @@ section {
     text-align: center;
     display: flex;
 }
+
+.about-recycle {
+    display: flex;
+    flex-direction: row;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 5rem;
+    font-family: "Urbanist", sans-serif;
+}
+
+.about-img {
+    width: 22rem;
+    height: auto;
+    border-radius: 30px;
+    display: block;
+    margin-right: 2rem;
+    object-fit: cover;
+}
+
+.about-title {
+    font-size: 3rem;
+    font-family: "Urbanist", sans-serif;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
