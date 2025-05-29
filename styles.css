@@ -98,27 +98,49 @@ section {
 .materials-cont {
     display: flex;
     flex-direction: row;
-    position: relative;
-    overflow: hidden;
+    align-items: center;
+    gap: 2rem;
 }
 
 .materials-img {
-    width: 35rem;
+    flex: 1 1 300px;
+    max-width: 35rem;
+    min-width: 180px;
     height: auto;
     border-radius: 30px;
     display: block;
-}
-
-.materials-txt {
-    font-size: 1.5rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
-    padding-top: 5rem;
+    object-fit: cover;
 }
 
 .img-padding {
-    padding-right: 6rem;
+    padding-right: 3rem;
 }
+
+.materials-txt {
+    flex: 1 1 300px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    padding-left: 3rem;
+    padding-top: 5rem;
+}
+
+@media (max-width: 700px) {
+    .materials-cont {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .materials-img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .materials-txt {
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+}
+
+
 
 .about-cont {
     display: grid;
@@ -198,6 +220,23 @@ section {
         max-width: 200px;
         margin-bottom: 1rem;
     }
+
+    .materials-cont {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .materials-img {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .materials-txt {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 2rem;
+    }
 }
 
 .about-title {
@@ -213,4 +252,35 @@ section {
     text-align: left;
     padding-top: 1rem;
     font-family: "Urbanist", sans-serif;
+}
+
+/* sponsor section */
+.sponsors-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Urbanist", sans-serif;
+}
+
+.sponsors-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sponsor-logo1 {
+    height: 5rem;
+    width: auto;
+}
+
+.sponsor-logo2 {
+    height: 3rem;
+    width: auto;
+}
+
+.sponsor-logo3 {
+    height: 2rem;
+    width: auto;
 }
