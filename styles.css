@@ -1,3 +1,14 @@
 h1 {
     color: red;
 }
+
+/* nav bar */
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+
+.nav-title {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
