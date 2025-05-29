@@ -28,7 +28,7 @@ section {
 }
 
 .hero-img {
-    max-height: 120vh;
+    max-height: 130vh;
     object-fit: cover;
     display: flex;
     border-radius: 30px;
@@ -38,7 +38,7 @@ section {
 .hero-txt {
     position: absolute;
     top: 30%;
-    left: 30%;
+    left: 28%;
     transform: translate(-50%, -50%);
     color: black;
     text-align: left;
@@ -80,6 +80,67 @@ section {
 .mission-txt {
     font-size: 1.5rem;
     text-align: center;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+/* about section */
+.about-sect {
+    display: flex;
+    font-family: "Urbanist", sans-serif;
+    flex-direction: column;
+}
+
+.materials-cont {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+}
+
+.materials-img {
+    width: 35rem;
+    height: auto;
+    border-radius: 30px;
+    display: block;
+}
+
+.materials-txt {
+    font-size: 1.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 5rem;
+}
+
+.img-padding {
+    padding-right: 6rem;
+}
+
+.about-cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding-top: 5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.about-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+    background-color: #828c45;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.about-txt {
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
 }
