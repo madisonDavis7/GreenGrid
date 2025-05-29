@@ -9,6 +9,22 @@ h1 {
 
 .nav-title {
     font-family: "Urbanist", sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-style: thin;
+}
+
+/* hero section */
+.img-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+
+}
+
+.hero-img {
+    max-height: 120vh;
+    object-fit: cover;
+    display: flex;
+    border-radius: 30px;
 }
