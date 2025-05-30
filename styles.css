@@ -435,7 +435,6 @@ section {
 }
 
 .founders-title {
-    border: 2px solid blue;
     font-size: clamp(1.5rem, 4vw, 3rem);
     margin-bottom: 3vw;
 }
@@ -445,24 +444,39 @@ section {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 4vw;
     padding-left: 3vw;
     padding-right: 3vw;
-    border: red solid 2px;
+    border: pink solid 2px;
 }
 
 .founder-img {
-    width: 20vw;
+    width: 24vw;
     height: auto;
     border-radius: 50%;
     aspect-ratio: 1/1;
     object-fit: cover;
     display: block;
+    border: red solid 2px;
+}
 
+.founder-name {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-family: "Urbanist", sans-serif;
+    text-align: center;
+    font-weight: 200;
+    ;
+    border: green solid 2px;
 }
 
 .logo-img {
-    width: 10vw;
+    width: 14vw;
     height: auto;
+    display: flex;
+    margin-bottom: 4vw;
+    border: solid blue 2px;
+}
 
+.founder-col {
+    border: orange solid 2px;
 }
