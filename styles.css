@@ -100,10 +100,14 @@ section {
     flex-direction: row;
     align-items: center;
     gap: 2rem;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    border: 2px solid red;
 }
 
 .materials-img {
     flex: 1 1 300px;
+    width: 100%;
     max-width: 35rem;
     min-width: 180px;
     height: auto;
@@ -119,11 +123,10 @@ section {
 .materials-txt {
     flex: 1 1 300px;
     font-size: clamp(1rem, 2vw, 1.5rem);
-    padding-left: 3rem;
-    padding-top: 5rem;
+    border: 2px solid blue;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     .materials-cont {
         flex-direction: column;
         gap: 2rem;
@@ -136,7 +139,6 @@ section {
 
     .materials-txt {
         padding-left: 0;
-        padding-top: 2rem;
     }
 }
 
@@ -226,7 +228,9 @@ section {
         gap: 1rem;
     }
 
-    .materials-img {
+
+    .materials-txt {
+        flex: none;
         width: 100%;
         max-width: 100%;
         min-width: 0;
