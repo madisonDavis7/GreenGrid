@@ -170,7 +170,6 @@ section {
     padding-top: 4vw;
     padding-left: 4vw;
     padding-right: 4vw;
-    border: 2px solid red;
     flex-direction: row;
     display: flex;
     display: grid;
@@ -191,7 +190,6 @@ section {
     border-radius: 50%;
     font-size: 2rem;
     text-align: center;
-    border: 2px green solid;
     transition: width 0.2s, max-width 0.2s;
 }
 
@@ -213,7 +211,6 @@ section {
     font-size: clamp(1rem, 2vw, 1.5rem);
     text-align: center;
     display: flex;
-    border: 2px blue solid;
 }
 
 .about-recycle {
@@ -226,22 +223,24 @@ section {
     padding-top: 3rem;
     font-family: "Urbanist", sans-serif;
     box-sizing: border-box;
+    border: red 2px solid;
 }
 
 .about-img {
-    width: 15rem;
+    width: 20vw;
     max-width: 100%;
-    flex: 1 1 0;
+    aspect-ratio: 1/1;
     height: auto;
     border-radius: 30px;
     display: block;
     object-fit: cover;
+    border: green solid 2px;
 }
 
 /* Responsive adjustments for laptops and smaller screens */
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .about-img {
-        width: 12rem;
+        width: 16rem;
     }
 
     .about-recycle {
@@ -259,11 +258,6 @@ section {
         justify-content: center;
     }
 
-    .about-img {
-        width: 80%;
-        max-width: 200px;
-        margin-bottom: 1rem;
-    }
 
     .materials-cont {
         flex-direction: column;
@@ -285,18 +279,31 @@ section {
     }
 }
 
+@media (max-width: 550px) {
+    .about-recycle .about-img {
+        width: 30vw;
+
+    }
+
+    .about-recycle {
+        gap: 0.5rem;
+    }
+}
+
 .about-title {
     font-size: clamp(1.5rem, 4vw, 3rem);
     font-family: "Urbanist", sans-serif;
     margin-bottom: 1rem;
     font-weight: 500;
+    border: 2px solid blue;
 }
 
 .recycle-txt {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     text-align: left;
     padding-top: 1rem;
     font-family: "Urbanist", sans-serif;
+    border: 2px solid pink;
 }
 
 /* sponsor section */
@@ -304,7 +311,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: centr;
+    text-align: center;
 }
 
 .sponsors-title {
