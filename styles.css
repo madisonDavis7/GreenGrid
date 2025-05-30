@@ -142,10 +142,6 @@ section {
     object-fit: cover;
 }
 
-.img-padding {
-    padding-right: 3rem;
-}
-
 .materials-txt {
     flex: 1 1 300px;
     font-size: clamp(1rem, 2vw, 1.5rem);
@@ -171,12 +167,15 @@ section {
 
 
 .about-cont {
+    padding-top: 4vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    border: 2px solid red;
+    flex-direction: row;
+    display: flex;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
-    padding-top: 5rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
+
 }
 
 .about-col {
@@ -184,20 +183,37 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 15rem;
+    width: 100%;
     aspect-ratio: 1/1;
+    max-width: 15rem;
     margin: 0 auto;
     background-color: #828c45;
     border-radius: 50%;
     font-size: 2rem;
     text-align: center;
+    border: 2px green solid;
+    transition: width 0.2s, max-width 0.2s;
+}
+
+/* Responsive: shrink max-width on smaller screens */
+@media (max-width: 900px) {
+    .about-col {
+        max-width: 10rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .about-cont {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .about-txt {
     font-size: clamp(1rem, 2vw, 1.5rem);
-    /* Responsive between 1rem and 1.5rem */
     text-align: center;
     display: flex;
+    border: 2px blue solid;
 }
 
 .about-recycle {
