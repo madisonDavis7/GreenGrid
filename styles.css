@@ -447,7 +447,6 @@ section {
     gap: 4vw;
     padding-left: 3vw;
     padding-right: 3vw;
-    border: pink solid 2px;
 }
 
 .founder-img {
@@ -457,7 +456,6 @@ section {
     aspect-ratio: 1/1;
     object-fit: cover;
     display: block;
-    border: red solid 2px;
 }
 
 .founder-name {
@@ -465,8 +463,6 @@ section {
     font-family: "Urbanist", sans-serif;
     text-align: center;
     font-weight: 200;
-    ;
-    border: green solid 2px;
 }
 
 .logo-img {
@@ -474,9 +470,4 @@ section {
     height: auto;
     display: flex;
     margin-bottom: 4vw;
-    border: solid blue 2px;
-}
-
-.founder-col {
-    border: orange solid 2px;
 }
