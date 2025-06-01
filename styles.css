@@ -7,6 +7,10 @@ section {
     width: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* nav bar */
 .navbar-light .navbar-nav .nav-link {
     color: #000;
