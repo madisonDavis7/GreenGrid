@@ -11,6 +11,23 @@ html {
     scroll-behavior: smooth;
 }
 
+a:focus,
+button:focus {
+    background: #828c45;
+    border-radius: 20px;
+}
+
+.navbar-brand:focus {
+    background: none !important;
+    outline: none;
+}
+
+.navbar-brand:focus img {
+    outline: 2px solid black;
+    border-radius: 4px;
+
+}
+
 /* nav bar */
 .navbar-light .navbar-nav .nav-link {
     color: #000;
