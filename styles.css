@@ -222,6 +222,7 @@ button:focus {
 
 }
 
+/*
 .about-col {
     display: flex;
     flex-direction: column;
@@ -236,6 +237,24 @@ button:focus {
     font-size: 2rem;
     text-align: center;
     transition: width 0.2s, max-width 0.2s;
+}
+    */
+
+.about-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #828c45;
+    max-width: 12rem;
+    margin: 0 auto;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    aspect-ratio: 1/1;
+    transition: width 0.2s, max-width 0.2s;
+    border-radius: 45px;
+
 }
 
 /* Responsive: shrink max-width on smaller screens */
@@ -505,10 +524,17 @@ button:focus {
 .founder-img {
     width: 20vw;
     height: auto;
-    border-radius: 50%;
+    border-radius: 45px;
     aspect-ratio: 1/1;
     object-fit: cover;
     display: block;
+}
+
+.founder-img:hover,
+.submit-btn:hover,
+.about-col:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
 
 .founder-name {
@@ -516,6 +542,7 @@ button:focus {
     font-family: "Urbanist", sans-serif;
     text-align: center;
     font-weight: 200;
+    margin-top: 1rem;
 }
 
 .logo-img {
