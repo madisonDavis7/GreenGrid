@@ -275,6 +275,7 @@ button:focus {
     font-size: clamp(1rem, 2vw, 1.5rem);
     text-align: center;
     display: flex;
+    padding-top: 1rem;
 }
 
 .about-recycle {
