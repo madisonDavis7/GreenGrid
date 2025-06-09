@@ -755,4 +755,16 @@ footer {
         padding-bottom: 5vh;
     }
 
+    .contact-cont {
+        border: solid 2px red;
+        flex-direction: column;
+    }
+
+    .contact-img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
 }
