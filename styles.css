@@ -734,4 +734,23 @@ footer {
         width: 90%;
     }
 
+    .founders-cont {
+        border: solid red 2px;
+        gap: .5rem;
+    }
+
+    .founder-img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .founder-col {
+        border: blue solid 2px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
