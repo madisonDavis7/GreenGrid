@@ -103,7 +103,6 @@ button:focus {
 
 /* mission section */
 .mission-sect {
-
     font-family: "Urbanist", sans-serif;
 }
 
@@ -312,7 +311,6 @@ button:focus {
 
 .about-img {
     width: 20vw;
-    max-width: 100%;
     aspect-ratio: 1/1;
     height: auto;
     border-radius: 30px;
@@ -362,16 +360,6 @@ button:focus {
     }
 }
 
-@media (max-width: 550px) {
-    .about-recycle .about-img {
-        width: 30vw;
-
-    }
-
-    .about-recycle {
-        gap: 0.5rem;
-    }
-}
 
 .about-title {
     font-size: clamp(1.5rem, 4vw, 3rem);
@@ -666,5 +654,79 @@ footer {
     width: 4vw;
     height: auto;
     display: block;
+
+}
+
+
+
+/* for phones 450px and below*/
+@media (max-width: 450px) {
+    section {
+        padding-bottom: 1rem;
+    }
+
+    .mission-title,
+    .sponsors-title,
+    .founders-title,
+    .contact-title {
+        font-size: 2.2rem;
+    }
+
+    .img-cont {
+        border: red solid 2px;
+        padding-top: 6rem;
+    }
+
+    .hero-img {
+        width: 95%;
+    }
+
+    .materials-txt {
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .about-cont {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding-top: 2rem;
+    }
+
+    .about-col {
+        width: 300px;
+        max-width: none;
+        height: 65px;
+    }
+
+    .about-recycle {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    .about-img {
+        width: 95vw;
+        height: 12vh;
+    }
+
+    .recycle-row {
+        padding-top: .5rem;
+    }
+
+    .about-title {
+        font-weight: 550;
+    }
+
+    .recycle-txt {
+        text-align: center;
+    }
+
+    .sponsor-logo2 {
+        height: 1.5rem;
+    }
+
+    .sponsors-cont {
+        padding-bottom: 1rem;
+    }
 
 }
