@@ -767,4 +767,10 @@ footer {
         margin-top: 2rem;
     }
 
+    .footer-logo {
+        width: 6vw;
+        height: auto;
+        margin-bottom: 5vh;
+    }
+
 }
