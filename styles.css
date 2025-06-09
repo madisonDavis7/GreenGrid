@@ -756,7 +756,6 @@ footer {
     }
 
     .contact-cont {
-        border: solid 2px red;
         flex-direction: column;
     }
 
@@ -772,5 +771,7 @@ footer {
         height: auto;
         margin-bottom: 5vh;
     }
+
+
 
 }
