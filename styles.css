@@ -729,4 +729,9 @@ footer {
         padding-bottom: 1rem;
     }
 
+    .origin-txt {
+        font-size: .5rem;
+        width: 90%;
+    }
+
 }
