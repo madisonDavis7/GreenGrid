@@ -735,7 +735,6 @@ footer {
     }
 
     .founders-cont {
-        border: solid red 2px;
         gap: .5rem;
     }
 
@@ -746,11 +745,14 @@ footer {
     }
 
     .founder-col {
-        border: blue solid 2px;
         align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .logo-img {
+        padding-bottom: 5vh;
     }
 
 }
